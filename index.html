@@ -49,7 +49,7 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="#" class="active">Inicio</a></li>
           <li><a href="#team">Nosotros</a></li>
           <li><a href="#mision">Nuestra mision</a></li>
           
@@ -68,13 +68,7 @@
           <h2 data-aos="fade-up">Sistema de Identificacion Territorial</h2>
           <p data-aos="fade-up" data-aos-delay="100">Hemos dividido el mundo en cuadrados de 3 x 3 m y le hemos asignado a cada uno de ellos una combinación única de letra departamento distrito y numero de padron lo que genera una etiqueta.
             Es la forma más fácil de encontrar y compartir ubicaciones exactas.</p>
-
-          <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-            <input type="text" class="form-control" placeholder="Etiqueta sit">
-            <button type="submit" class="btn btn-primary">Buscar</button>
-          </form>
-
-          
+            <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">Ver el Mapa</button>         
         </div>
 
         <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
@@ -89,7 +83,31 @@
   </section><!-- End Hero Section -->
   
   <main id="main">
-    <iframe style="border:0; width: 100%; height: 700px;" src="https://what3words.com/otro.lavanda.deseaba" frameborder="0"></iframe>
+    
+
+    <!-- modal  -->
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Mapa demo</h5>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe style="border:0; width: 100%; height: 500px;" src="https://what3words.com/otro.lavanda.deseaba" frameborder="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
     
 
@@ -349,14 +367,10 @@
    
 
     <div class="container mt-4">
-      <div data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="2000"class="copyright">
+      <div class="copyright">
         &copy; Copyright <strong><span>S.I.T</span></strong>. All Rights Reserved
       </div>
-      <div data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="3000" class="credits">
+      <div  class="credits">
        
         Designed by <a href="">Daniel Videla y Daniel Aricoma</a>
         <p>Proyecto final materia Requerimiento de software primer año- Profesora Viviana Galvez</p>
